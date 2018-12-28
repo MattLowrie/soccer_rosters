@@ -12,6 +12,7 @@ Original file is located at
 # !pip install -q wikitables
 # !pip install --upgrade certifi
 
+import argparse
 import codecs
 import csv
 import logging
@@ -25,10 +26,14 @@ from googlesearch import search
 from urllib.parse import urlparse
 from urllib.parse import urlunparse
 from wikitables import import_tables
+import sys
 
 def main():
   logger = logging.getLogger(__name__)
   logger.setLevel(logging.DEBUG)
+  school_filter = []
+  if flags.schools:
+    school_filter = [f.strip() for f in flags.schools.split(',')]
   # d1_roster_urls.csv headers:
   roster_headers = ['Institution', 'Location', 'State', 'Type', 'Nickname', 'Conference', 'Url']
   schools = []
@@ -38,19 +43,19 @@ def main():
   nicknames = []
   conferences = []
   urls = []
-  with open('d1_roster_urls.csv', 'r') as rosters_csv:
+  with open('ncaa_d1_womens_soccer_programs.csv', 'r') as rosters_csv:
     reader = csv.DictReader(rosters_csv)
     for row in reader:
-      if row['Institution'] == 'Austin Peay':
-        schools.append(row['Institution'])
-        locations.append(row['Location'])
-        states.append(row['State'])
-        types.append(row['Type'])
-        nicknames.append(row['Nickname'])
-        conferences.append(row['Conference'])
-        urls.append(row['Url'])
-
-  print('\n'.join(urls))
+      if school_filter and row['Institution'] not in school_filter:
+        continue
+      schools.append(row['Institution'])
+      locations.append(row['Location'])
+      states.append(row['State'])
+      types.append(row['Type'])
+      nicknames.append(row['Nickname'])
+      conferences.append(row['Conference'])
+      urls.append(row['Url'])
+  print(schools)
 
   http_headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
@@ -80,26 +85,36 @@ def main():
               # ... and the value doesn't contain 'soc', set the param value to
               # which should work in all cases.
               params[k] = 'wsoc'
+            else:
+              params[k] = v
           else:
             params[k] = v
+        else:
+          params[query_param] = None
+    reconstituted_url = urlunparse((
+      parsed_url.scheme,
+      parsed_url.netloc,
+      parsed_url.path,
+      None, None, None))
     request_args.append({
-        'url': urlunparse((
-            parsed_url.scheme,
-            parsed_url.netloc,
-            parsed_url.path,
-            None, None, None)),
+        'url': reconstituted_url,
         'params': params,
         'headers': http_headers,
     })
-    corrected_urls.append(request_args[i]['url'])
-  # index_start = 220
-  # index_end = 230
+    corrected_url = reconstituted_url + '?'
+    corrected_url += '&'.join(['%s=%s' % (k, v) for k, v in params.items()])
+    corrected_urls.append(corrected_url)
+
+  # index_start = 200
+  # index_end = 250
   # test_set = request_args[index_start:index_end]
   # for tester in test_set:
   #   print(tester['url'])
 
+  # print(len(corrected_urls))
+  # print(len(urls))
   soups = []
-  for req_args in request_args:
+  for i, req_args in enumerate(request_args):
   # for req_args in test_set:
     try:
       r = requests.get(**req_args)
@@ -111,7 +126,12 @@ def main():
           soups.append(bs(r.content, 'html.parser'))
       else:
         soups.append('')
-        logger.warn('Status code %d for %s', r.status_code, req_args['url'])
+        logger.warn('Request args')
+        logger.warn(req_args)
+        logger.warn('Status code %d for %s', r.status_code, corrected_urls[i])
+        logger.warn('HTTP reason: %s', r.reason)
+        logger.warn('HTTP response headers:')
+        logger.warn(r.raw.getheaders())
     except requests.exceptions.ConnectionError:
       logger.error('Connection error for: %s', req_args['url'])
       soups.append('')
@@ -119,6 +139,8 @@ def main():
 
   teams = []
   for i, soup in enumerate(soups):
+  # for offset, soup in enumerate(soups):
+    # i = index_start + offset
     logger.debug('=' * 20)
     logger.debug(urls[i])
     if 'roster.aspx' in urls[i] and soup:
@@ -126,6 +148,9 @@ def main():
       teams.append(sidearm.GetTeam())
     elif '2018-19/roster' in urls[i] and soup:
       table_proc = ncaa_roster_parser.TableProcessor(soup)
+      teams.append(table_proc.GetTeam())
+    elif 'SportSelect' in urls[i] and soup:
+      table_proc = ncaa_roster_parser.SportSelectProcessor(soup)
       teams.append(table_proc.GetTeam())
     else:
       logger.warn('Site processor not found: %s', urls[i])
@@ -143,7 +168,7 @@ def main():
         types[i],
         nicknames[i],
         conferences[i],
-        urls[i],
+        corrected_urls[i],
       ])
       if isinstance(player, str):
         csv_row =+ player
@@ -152,38 +177,21 @@ def main():
           csv_row += ',' + player[k]
       csv_rows.append(csv_row)
 
-  with codecs.open('rosters-austinpeay.csv', 'w', 'utf-8-sig') as fw:
+  with codecs.open(flags.output_file, 'w', 'utf-8-sig') as fw:
+    fw.write('School,City,State,Type,Nickname,Conference,Roster,Player,Jersey,Position,Height,Hometown,Home State,High School,Year,Club\n')
     for csv_row in csv_rows:
       fw.write(csv_row + '\n')
-  # players = soup.findAll('li', attrs={'class': 'sidearm-roster-player'})
-  # print(len(players))
-  # for player in players:
-  #   name_text = player.select('[class*="name"]')[0].get_text()
-  #   match = re.search(NAME_RE, name_text)
-  #   if match:
-  #     name = match.group()
-  #   else:
-  #     name = name_text.strip()
-  #   print(name)
-  # print(players[0].select('[class*="name"]')[0].get_text().strip())
-  # print(players[0].select('[class*="position"]')[0].get_text().strip())
-  # print(players[0].select('[class*="height"]')[0].get_text().strip())
-  # infos = players[0].get_text().split('\n')
-  # for info in infos:
-  #  sinfo = info.strip()
-  #  if sinfo:
-  #    print(sinfo)
-  # garbage = soup.get_text().split('\n')
-  # print(garbage.index('Players'))
-  # i = garbage.index('Players')
-  # clean = []
-  # for g in garbage[i:]:
-  #  if g.strip():
-  #    clean.append(g.strip())
-  # print('\n'.join(clean))
+
 
 if __name__ == '__main__':
-  fmt = '%(asctime)s,%(msecs)-3d %(levelname)-8s %(filename)s - %(message)s'
+  parser = argparse.ArgumentParser()
+  parser.add_argument('-o', '--output_file', metavar='FILENAME',
+                      default='rosters-out.csv',
+                      help='The filename to output the csv data.')
+  parser.add_argument('--schools', metavar='"SCHOOL 1, SCHOOL 2, SCHOOL 3"',
+                      help='A comma-separated list of schools to output.')
+  flags = parser.parse_args()
+  fmt = '%(asctime)s,%(msecs)-3d %(levelname)-8s %(filename)s %(name)s - %(message)s'
   f = logging.Formatter(fmt=fmt, datefmt='%m-%d %H:%M:%S')
   h = logging.FileHandler('/tmp/d1_rosters.log', 'w', encoding='UTF-8')
   h.setFormatter(f)
