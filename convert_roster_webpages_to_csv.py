@@ -16,9 +16,9 @@ def read_webpages(webpage_dir, school_filter=None):
     webpage_dir: A string of the directory to read from.
 
   Returns:
-    A tuple of lists of dicts, one each for webpages and urls, in this format:
+    A 2-tuple of of dicts, one each for webpages and urls, in this format:
       webpages:
-        {<school name>: <roster webpage content>}
+        {<school name>: <roster webpage raw HTML content>}
       urls:
         {<school name>: <url>}
   """
@@ -28,19 +28,39 @@ def read_webpages(webpage_dir, school_filter=None):
   for webpage_file in webpage_files:
     file_path = os.path.join(webpage_dir, webpage_file)
     content = roster_file_util.read_file(file_path)
+    # Get the school name from the file name. Convert underscores back into
+    # spaces.
     school = webpage_file[:webpage_file.find('.')].replace('_', ' ')
     if school_filter and school not in school_filter:
       continue
     if webpage_file.endswith('webpage'):
       webpages[school] = content
-    else:
+    elif webpage_file.endswith('url'):
       urls[school] = content
   return webpages, urls
 
 
 def parse_webpages(webpages, urls):
+  """Selects an HTML processor for each school roster webpage.
+
+  Arguments:
+    webpages: A dict of strings of {school:webpage HTML} pairs.
+    urls: A dict of strings of {school:url} pairs.
+
+  Returns:
+    A dict with a list of players for each school in the form of:
+      {school 1: [{player 1 attributes},
+                  {player 2 attributes}, ...
+                  {player n attributes},],
+       school 2: [{player 1 attributes},
+                  {player 2 attributes}, ...
+                  {player n attributes},], ...
+      }
+      Example:
+        {'North Carolina': [{'name': 'Mia Hamm', 'position': 'F', ...},
+                            {'name': ''}]}
+  """
   school_teams = {}
-  # pdb.set_trace()
   for school in webpages:
     page = bs(webpages[school], 'html.parser')
     url = urls[school]
@@ -65,6 +85,20 @@ def parse_webpages(webpages, urls):
 def set_csv_rows(schools, locations, states, types, nicknames, conferences,
                  urls, teams):
   """Take all the collected data and put it in csv rows.
+
+  Arguments:
+    schools: A list of strings of school names.
+    locations: A list of strings of school locations.
+    states: A list of strings of school states.
+    types: A list of strings of school types (e.g., 'Public', 'Private', etc.)
+    nicknames: A list of strings of school nicknames.
+    conferences: A list of strings of school conferences.
+    urls: A dict of roster URLs with the school as the key.
+    teams: A dict of each school's team. The dict values are lists of dicts of
+        each player's attributes.
+
+  Returns:
+    A list of strings of each CSV row.
   """
   csv_rows = []
   for i, school in enumerate(schools):
@@ -90,8 +124,8 @@ def main():
   if flags.schools:
     school_filter = [f.strip() for f in flags.schools.split(',')]
 
-  # We already have the corrected URLs, so we don't need to get it from the
-  # school info data.
+  # No need to get the roster URLs from this source. They will be collected from
+  # the next step.
   schools, locations, states, types, nicknames, conferences, _ = \
       roster_file_util.read_school_info_file(flags.school_info_file,
                                              school_filter)
@@ -114,7 +148,7 @@ def _set_arguments():
   parser = argparse.ArgumentParser()
   parser.add_argument('--webpage_dir', metavar='DIRNAME',
                       default='roster_webpages',
-                      help='Directory that holds all webpages to read in.')
+                      help='Directory with webpage files to read in.')
   parser.add_argument('--school_info_file', metavar='FILENAME',
                       default='csv/ncaa_d1_womens_soccer_programs.csv',
                       help='CSV file to read school information in from.')
