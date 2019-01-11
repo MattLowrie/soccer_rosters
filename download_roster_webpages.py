@@ -11,6 +11,8 @@ from urllib.parse import urlunparse
 from util import roster_file_util
 
 
+# The roster web servers only return a response if the request headers simulate
+# a real web browser.
 HTTP_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
@@ -19,21 +21,23 @@ HTTP_HEADERS = {
 }
 
 
-def main():
-  logger = logging.getLogger(__name__)
+def format_request_args(urls):
+  """Formats URLs for the requests module.
 
-  school_filter = []
-  if flags.schools:
-    school_filter = [f.strip() for f in flags.schools.split(',')]
+  This routine parses every roster URL and formats it as a dict of function
+  arguments to pass to requests.get(). Also cleans up some query strings.
 
-  schools, _, _, _, _, _, urls = \
-      roster_file_util.read_school_info_file(flags.input_file, school_filter)
+  Arguments:
+    urls: A list of strings of every roster url.
 
-  # This routine parses every roster URL and formats it as a dict of function
-  # arguments to pass to requests.get().
+  Returns:
+    A 2-tuple:
+        First a list of dicts of request args to pass into requests.get().
+        Second a list of string of urls with corrected query params.
+  """
   request_args = []
   corrected_urls = []
-  for i, url in enumerate(urls):
+  for url in urls:
     parsed_url = urlparse(url)
     params = {}
     if parsed_url.query:
@@ -75,9 +79,21 @@ def main():
         None,
       ))
     )
+  return request_args, corrected_urls
 
-  # This routine will make the network request to each URL and convert the page
-  # content into a BeautifulSoup object.
+
+def get_webpage_content(request_args):
+  """Calls each roster URL and returns the content as a BeautifulSoup instance.
+
+  Arguments:
+    request_args: A list of dicts that contain the named arguments for the
+        function requests.get().
+
+  Returns:
+    A list of BeautifulSoup instances, one for each set of request args, unless
+        there was an exception with the URL response, in which case the index
+        in the instance list will contain an empty string.
+  """
   soups = []
   for req_args in request_args:
     try:
@@ -93,20 +109,53 @@ def main():
         logger.error('HTTP reason: %s', r.reason)
         logger.error('HTTP response headers:')
         logger.error(r.raw.getheaders())
+        # Keep the length of the content list equal to the URL list
         soups.append('')
     except requests.exceptions.ConnectionError:
       logger.error('Connection error for: %s', req_args['url'])
+      # Keep the length of the content list equal to the URL list
       soups.append('')
+  return soups
 
+
+def save_files(soups, schools, corrected_urls, output_dir):
+  """Save files locally.
+
+  This function saves 2 files for each school. One containing the HTML content
+  of the roster page, and one containing the URL used to request the page.
+
+  Arguments:
+    soups: A list of BeaufitfulSoup instances, one for each corresponding
+        school in the list of schools.
+    schools: A list of strings of each school name.
+    corrected_urls: A list of strings of each corresponding school roster URL.
+  """
   # Now save each webpage to a local file.
   for i, soup in enumerate(soups):
     file_name = schools[i].replace(' ', '_')
     roster_file_util.write_file(file_name + '.webpage',
                                 soup.prettify(),
-                                dir_path=flags.output_dir)
+                                dir_path=output_dir)
     roster_file_util.write_file(file_name + '.url',
                                 corrected_urls[i],
-                                dir_path=flags.output_dir)
+                                dir_path=output_dir)
+
+
+def main():
+  logger = logging.getLogger(__name__)
+
+  school_filter = []
+  if flags.schools:
+    school_filter = [f.strip() for f in flags.schools.split(',')]
+
+  schools, _, _, _, _, _, urls = \
+      roster_file_util.read_school_info_file(flags.input_file, school_filter)
+
+  request_args, corrected_urls = format_request_args(urls)
+
+  soups = get_webpage_content(request_args)
+
+  save_files(soups, schools, corrected_urls, flags.output_dir)
 
 
 def _set_arguments():
