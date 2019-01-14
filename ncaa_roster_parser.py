@@ -8,6 +8,62 @@ import re
 from bs4 import BeautifulSoup as bs
 
 
+class ProcessorBase(object):
+  """Base class for implementing roster webpage processors.
+
+  Attributes:
+    name: A string of the current player's name when processing players.
+    jersey: A string of the current player's jersey number.
+    position: A string of the current player's position.
+    height: A string of the current player's height.
+    year: A string of the current player's year in school.
+    hometown: A string of the current player's hometown.
+    home_state: A string of the current player's home state.
+    high_school: A string of the current player's high school, if provided.
+    club: A string of the current player's club, if provided.
+    team: A list of dicts containing each player's data.
+  """
+
+  name = ''
+  jersey = ''
+  position = ''
+  height = ''
+  hometown = ''
+  home_state = ''
+  high_school = ''
+  year = ''
+  club = ''
+  team = []
+
+  def __init__(self, content, logger_name):
+    self.logger = logging.getLogger(logger_name)
+    self.content = content
+
+  def remove_extra_spaces(self, text):
+    return ' '.join([s.strip() for s in text.split()])
+
+  def add_player_to_team(self):
+    if self.name:
+      self.team.append({
+        'name': self.name,
+        'jersey': self.jersey,
+        'position': self.position,
+        'height': self.height,
+        'hometown': self.hometown,
+        'home_state': self.home_state,
+        'high_school': self.high_school,
+        'year': self.year,
+        'club': self.club,
+      })
+    # Reset the class attributes for the next player.
+    self.name = self.jersey = self.position = self.height = self.hometown = \
+        self.home_state = self.high_school = self.year = self.club = ''
+
+  def get_team(self):
+    """Subclasses should override this function."""
+    raise Exception("Not implemented.")
+
+
 class HtmlTableProcessor(object):
   """Parses generic HTML tables where the category is the class attribute name."""
 
@@ -304,52 +360,89 @@ class SidearmProcessor(object):
       return self.GetTeamFromSidearmTable()
 
 
-class SportSelectProcessor(object):
+class SportSelectProcessor(ProcessorBase):
+  """Processes roster websites with the SportSelect URL."""
 
   def __init__(self, content):
-    self.logger = logging.getLogger('SportSelectProcessor')
-    self.content = content
+    super().__init__(content, 'SportSelectProcessor')
+
+  def get_data_node_text(self, node):
+    return node.select('[class="data"]')[0].get_text().strip()
+
+  def get_players(self):
+    return self.content.findAll('div',
+                                attrs={'class': re.compile('player.+left')})
+
+  def get_player_name(self, player):
+    name_text = player.select('[class*="player-name"]')[0].get_text()
+    return self.remove_extra_spaces(name_text)
+
+  def get_player_jersey(self, player):
+    jersey_text = player.select('[class*="number"]')[0].get_text().strip()
+    if jersey_text.startswith('#'):
+      jersey = jersey_text[1:]
+    else:
+      jersey = jersey_text
+    return jersey
+
+  def get_player_position(self, player):
+    return self.get_data_node_text(player.select('[class*="position"]')[0])
+
+  def get_player_height(self, player):
+    return player.select('[class*="height"]')[0].get_text().strip()
+
+  def get_player_year(self, player):
+    return self.get_data_node_text(player.select('[class*="year"]')[0])
+
+  def get_hometown_homestate_highschool_club(self, player):
+    hometown = home_state = high_school = club = ''
+    hometown_text = self.get_data_node_text(
+        player.select('[class*="hometown"]')[0])
+    # SportSelect sites put the high school name in parenthesis after the
+    # hometown name and state. Example: McKinney, Texas (Boyd HS).
+    # This regex looks for text plus special characters between parenthesis, as
+    # sometimes the high school name is more than letters, e.g., St. John's HS.
+    # There is also the potential for multiple listings in parenthesis, such as
+    # (previous school) (high school) (club name). Using findall() will get all
+    # of these listings in a list.
+    sport_select_hs_format =  re.findall(r'(\([a-zA-Z\.\,\s\-\'\&\/^(]+\)*)',
+                                         hometown_text)
+    if sport_select_hs_format:
+      # When there is a previous school that the player transferred from, it is
+      # usually listed first, so pop the end of the list for the high school.
+      pop_last = sport_select_hs_format.pop()
+      high_school = pop_last.replace('(', '').replace(')', '')
+      high_school = self.remove_extra_spaces(high_school)
+    # If there are still more listings after poping the last one, then either
+    # there is a previous school listed or a club team is listed. A previous
+    # school listing is less likely so assume a club listing.
+    if sport_select_hs_format:
+      club = high_school
+      pop_again = sport_select_hs_format.pop()
+      high_school = pop_again.replace('(', '').replace(')', '')
+      high_school = self.remove_extra_spaces(high_school)
+    # Get the text up to the first parenthesis if one exists.
+    if '(' in hometown_text:
+      end_index = hometown_text.index('(') - 1
+    else:
+      end_index = len(hometown_text)
+    hometown = hometown_text[:end_index].strip()
+    if ',' in hometown:
+      hometown, home_state = hometown.split(',', 1)
+      hometown = hometown.strip()
+      # Need to remove any extra commas for correct CSV alignment
+      home_state = home_state.replace(',', '').strip()
+    return hometown, home_state, high_school, club
 
   def get_team(self):
-    name = jersey = position = height = hometown = home_state = high_school = year = club = ''
-    team = []
-    players = self.content.findAll('div', attrs={'class': re.compile('player.+left')})
+    players = self.get_players()
     for player in players:
-      name_text = player.select('[class*="player-name"]')[0].get_text().strip()
-      name = ' '.join(name_text.split())
-      jersey_text = player.select('[class*="number"]')[0].get_text().strip()
-      if jersey_text.startswith('#'):
-        jersey = jersey_text[1:]
-      else:
-        jersey = jersey_text
-      height = player.select('[class*="height"]')[0].get_text().strip()
-      position = player.select('[class*="position"]')[0].select('[class="data"]')[0].get_text().strip()
-      year = player.select('[class*="year"]')[0].select('[class="data"]')[0].get_text().strip()
-      hometown_text = player.select('[class*="hometown"]')[0].select('[class="data"]')[0].get_text().strip()
-      # SportSelect sites put the high school name in parenthesis after the hometown
-      # name and state.
-      sport_select_hs_format =  re.findall('(\([a-zA-Z\.\,\s\-^(]+\)*)', hometown_text)
-      if sport_select_hs_format:
-        high_school = sport_select_hs_format[-1]
-        if high_school.startswith('(') and high_school.endswith(')'):
-          high_school = high_school[1:-1]
-      else:
-        high_school = ''
-      hometown = hometown_text[:hometown_text.find('(') -1].strip()
-      if ',' in hometown:
-        hometown, home_state = hometown.split(',', 1)
-        hometown = hometown.strip()
-        home_state = home_state.replace(',', '').strip()
-      if name:
-        team.append({
-          'name': name,
-          'jersey': jersey,
-          'position': position,
-          'height': height,
-          'hometown': hometown,
-          'home_state': home_state,
-          'high_school': high_school,
-          'year': year,
-          'club': club,
-        })
-    return team
+      self.name = self.get_player_name(player)
+      self.jersey = self.get_player_jersey(player)
+      self.position = self.get_player_position(player)
+      self.height = self.get_player_height(player)
+      self.year = self.get_player_year(player)
+      self.hometown, self.home_state, self.high_school, self.club = \
+          self.get_hometown_homestate_highschool_club(player)
+      self.add_player_to_team()
+    return self.team
