@@ -1,0 +1,3789 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html lang="en" class="internal-page no-js ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="internal-page no-js ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="internal-page no-js" lang="en" prefix="og: http://ogp.me/ns#">
+ <!--<![endif]-->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=5" name="viewport"/>
+  <title>
+   2018 Cal Poly Women's Soccer Roster - Cal Poly
+  </title>
+  <link href="//www.gopoly.com/sports/wsoc/2018-19/roster" rel="canonical"/>
+  <meta content="280467664480" property="fb:app_id">
+   <meta content="summary_large_image" name="twitter:card">
+    <meta content="@cpmustangs" name="twitter:site"/>
+    <meta content="@cpmustangs" name="twitter:creator"/>
+    <meta content="http://www.gopoly.com/images/setup/thumbnail_default.jpg?max_width=550&amp;max_height=550" name="twitter:image"/>
+    <meta content="2018 Cal Poly Women's Soccer Roster" property="og:title"/>
+    <meta content="2018 Cal Poly Women's Soccer Roster" property="og:description"/>
+    <meta content="http://www.gopoly.com/images/setup/thumbnail_default.jpg?max_width=600&amp;max_height=600" property="og:image"/>
+    <meta content="Cal Poly" property="og:site_name"/>
+    <meta content="//www.gopoly.com/sports/wsoc/2018-19/roster" property="og:url"/>
+    <script src="https://cdn.prestosports.com/action/cdn/info/jquery.js">
+    </script>
+    <script src="https://cdn.prestosports.com/action/cdn/info/modernizr.js">
+    </script>
+    <link href="/info/boilerplate.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css"/>
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-59374402-1', 'auto');
+ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+     var surround=new Object();
+    surround.cat = ['a','b','c','d','e','f'];
+    surround.cookie = readCookie('surround');
+    
+    if (surround.cookie == false || surround.cookie == undefined) {
+        surround.pick = Math.floor(Math.random() * surround.cat.length);
+        surround.subsession = Math.floor(Math.random() * 4) + 1; /*subsessions 1-4*/
+        document.cookie=("surround="+surround.cat[surround.pick]+"|"+surround.subsession+";domain=.247sports.com;path=/" );
+        surround.cookie = readCookie('surround');
+    }
+    if (surround.cookie) {surround.sessions=surround.cookie.split("|");}
+    surround.vguid = v1();  // set the vguid. This requires the code in the block above this one.
+    </script>
+    <script type="text/javascript">
+     xfpDomain = '.247sports.com';
+xfpInstance = '8264';
+xfpArena = 'cslo';
+xfpFeature = 'home';
+xfpSlot='/' +xfpInstance +'/aw-collegesports/' +xfpArena +'/' +xfpFeature;
+xfpSlotM='/' +xfpInstance +'/maw-collegesports/' +xfpArena +'/' +xfpFeature;
+
+// xfpSlot='/8264/aw-cbssports/other/media/home'; // JUST FOR TESTING ONLY
+
+// tracks if this is the first page the user has visited in this session
+function xfpFirstPageCookie() {
+    if (xfpFirstPage) {return xfpFirstPage;}           // only run once per page, if already set, just return value
+    var xfpFirstPage = readCookie('XFP_FIRSTPAGE');    // get firstPage cookie
+    if (!xfpFirstPage) {                               // if cookie doesn't exist, this is the first page, so firstPage = 1
+        xfpFirstPage = 1;
+    } else if (xfpFirstPage == 1) {                    // else, this is the second page, set firstPage = 0
+        xfpFirstPage = 0;
+    }
+    var exp = new Date();
+    exp.setTime(exp.getTime() + xfpGetTimeToExpiration(.75)); // get number of milliseconds until 12:45am ET
+    document.cookie=('XFP_FIRSTPAGE ='+xfpFirstPage+";expires="+exp.toUTCString()+";domain="+xfpDomain+";path=/;");      
+    return xfpFirstPage;                                // set and return the parameter DVAR_FIRSTPAGE = firstPage
+}
+
+// given the expiration hour in ET, return the number of milliseconds to
+// expiration from the given Date Object (defaults to current date)
+function xfpGetTimeToExpiration(etExpireHour,dt) {
+    dt = dt || new Date();
+    var etUtcOffset = 5;                            // hours
+    if (isEDT(dt)) etUtcOffset = 4;                 // if in daylight savings time
+    var utcExpire = (etExpireHour+etUtcOffset)%24;  // UTC expire time in hours
+    var utcTime = 60*dt.getUTCHours() + dt.getUTCMinutes(); // UTC time in mins
+    var minsToExpiration = 60*utcExpire - utcTime;  // time to expiration
+    if (minsToExpiration < 0) minsToExpiration = 24*60 + minsToExpiration;
+    return 60000*minsToExpiration;                  // in milliseconds
+}
+
+// determine if Daylight Savings Time is being observed in the ET timezone
+//   at the date/time of the given Date Object (defaults to current time)
+function isEDT(dt) {
+    dt = dt || new Date();          // default to current date
+    var month = dt.getUTCMonth();   // get month in UTC
+    if (month > 2 && month < 10) return true;   // in EDT if Apr to Oct
+    if (month < 2 || month > 10) return false;  // not in EDT if Jan,Feb,Dec
+    var date = dt.getUTCDate();     // get day of month in UTC
+    var day = dt.getUTCDay();       // get day of week in UTC
+    if (month == 10) {              // November
+        if (date > 7) return false; // after first week, not in EDT
+        if (day == 0) {             // Sunday of first week, check time
+            if (dt.getUTCHours() < 6) return true; //before 6am UTC, in EDT
+            return false;           // 6am UTC or later, not in EDT
+        }
+        if (date > day) return false; // Sunday has passed, not in EDT
+        return true;                // Sunday has not passed, in EDT
+    }
+
+    // March
+    if (date < 8) return false; // still first week, not in EDT
+    if (date > 14) return true; // after second week, in EDT
+    if (day == 0) {             // Sunday of second week, check time
+        if (dt.getUTCHours() > 6) return true; // 7am UTC or later, in EDT
+        return false;           // before 7am UTC, not in EDT
+    }
+    if (date - day > 7) return true;  // Sunday has passed, in EDT
+    return false; // Sunday has not passed, not in EDT
+}
+
+var xfpFirstPage =  xfpFirstPageCookie();
+var xfpSession    = (surround.cookie) ? surround.sessions[0] : 'off';
+var xfpSubsession = (surround.cookie) ? surround.sessions[1] : 'off';
+
+function xfpGetArgs(){
+    var args = new Object();
+    var query = location.search.substring(1); // get query string
+    var pairs = query.split("&");
+    for (var i=0; i < pairs.length; i++) {
+        var pos = pairs[i].indexOf('=');             // Look for name "name=value"
+        if (pos == -1) continue;                     // If not found, skip
+        var argname = pairs[i].substring(0,pos);     // Extract the name
+        var value   = pairs[i].substring(pos+1);     // Extract the value
+        value = decodeURIComponent(value);           // Decode it, if needed
+        var adTarg = argname.match(/adTargeting_/);  // Do we have a match on adTargeting_<key>
+
+        // Set Targeting for spec'd out query parms
+        if (argname == 'env' || argname == 'session' || argname == 'subses' || argname == 'adRegion' || argname == 'ftag' || argname == 'ttag' || (adTarg)) {
+            // args[argname] = value;
+            if (adTarg) {argname = argname.substring(12);}    // strip off adTargeting_ from the name if present
+            googletag.pubads().setTargeting(argname, value);  // Set Targeting
+            if (argname == 'ftag' || argname == 'ttag') {
+                document.cookie=("xfpFtag="+value+";domain="+xfpDomain+";path=/" );
+                newFtag = 1;
+            }
+        }
+    }
+    var xfpFtagVal = readCookie("xfpFtag");                   // check if we have an ftag cookie
+    var newFtag = 0;
+    if ((newFtag==0) && xfpFtagVal) {                         // If no new setting for ftag but we had an old one then
+        googletag.pubads().setTargeting('ftag', xfpFtagVal);  // Set Targeting
+    }
+}
+    </script>
+    <script type="text/javascript">
+     var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +'//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+})();
+    </script>
+    <script type="text/javascript">
+     googletag.cmd.push(function() {
+    
+// This mapping will only display ads when user is on desktop sized viewport
+// var mapping1 = googletag.sizeMapping().
+//   addSize([0, 0], [320, 50]).
+//   addSize([320, 700], [320, 50]). // Tablet
+//   addSize([1050, 200], [728, 90]). // Desktop
+//   build();
+  
+  var mapping = googletag.sizeMapping().
+  addSize([1024, 768], [728, 90]). //Desktop
+  addSize([980, 690], [320, 50]). //Tablet
+  addSize([640, 480], [320, 50]). //phone
+  addSize([0, 0], [320, 50]). // Fits browsers of any size smaller than 640 x 480
+  build();
+
+
+
+        if (document.documentElement.clientWidth > 729) {
+    /* IF DESKTOP */
+        XFP_leader_top = googletag.defineSlot(xfpSlot,  [728, 90], "leader_top").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "top");    
+        XFP_mpu_top = googletag.defineSlot(xfpSlot,  [300,250], "mpu_top").addService(googletag.pubads()).setTargeting("pos", "top");
+        XFP_mpu_bottom = googletag.defineSlot(xfpSlot,  [300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "middle");
+        XFP_leader_middle = googletag.defineSlot(xfpSlot, [728,90], "leader_middle").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "middle");
+        XFP_leader_bottom = googletag.defineSlot(xfpSlot, [728,90], "leader_bottom").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "bottom");
+        }
+        else {
+    /* IF MOBILE */
+        XFP_leader_top = googletag.defineSlot(xfpSlotM,  [320, 50], "leader_top").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "top");    
+        XFP_mpu_top = googletag.defineSlot(xfpSlotM,  [300,250], "mpu_top").addService(googletag.pubads()).setTargeting("pos", "top");
+        XFP_mpu_bottom = googletag.defineSlot(xfpSlotM,  [300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "middle");
+        XFP_leader_middle = googletag.defineSlot(xfpSlotM, [320, 50], "leader_middle").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "middle");
+        XFP_leader_bottom = googletag.defineSlot(xfpSlotM, [320, 50], "leader_bottom").defineSizeMapping(mapping).addService(googletag.pubads()).setTargeting("pos", "bottom");
+        }
+  
+    /* END IF */
+    /* IF MOBILE */
+    // XFP_leader_top = googletag.defineSlot(xfpSlotM, [320,50], "leader_top").defineSizeMapping(mapping2).addService(googletag.pubads()).setTargeting("pos", "top");
+    // XFP_square_top = googletag.defineSlot(xfpSlotM, [300,250], "mpu_top").defineSizeMapping(mapping2).addService(googletag.pubads()).setTargeting("pos", "top");
+    // XFP_logo_top = googletag.defineSlot(xfpSlot, [320,20], "logo_top").addService(googletag.pubads()).setTargeting("pos", "logo");
+    /* END IF */
+    
+    googletag.pubads().setTargeting("ptype", "home|post");
+    googletag.pubads().setTargeting("firstpg", ""+xfpFirstPage);
+    googletag.pubads().setTargeting("session", xfpSession);
+    googletag.pubads().setTargeting("subses", ""+xfpSubsession);
+    googletag.pubads().setTargeting("vguid", surround.vguid); 
+    
+    xfpGetArgs(); // to set/override targeting for env, session, subses, adRegion, ftag, ttag, and adTargeting_<key> if set by query string
+    googletag.pubads().enableAsyncRendering();
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+});
+    </script>
+    <script type="text/javascript">
+     /*
+ * Modified verion of uuid.js
+ *
+ * Copyright (c) 2010-2012 Robert Kieffer
+ * MIT License - http://opensource.org/licenses/mit-license.php
+ * Details here:
+ * https://sites.google.com/a/cbsinteractive.com/data-services/definitions-translations/viewguid
+ */
+    // Unique ID creation requires a high quality random # generator.    We feature
+    // detect to determine the best RNG source, normalizing to a function that
+    // returns 128-bits of randomness, since that's what's usually required
+    var _rng;
+
+    if (window.crypto && crypto.getRandomValues) {
+        // WHATWG crypto-based RNG - http://wiki.whatwg.org/wiki/Crypto
+        //
+        // Moderately fast, high quality
+        var _rnds8 = new Uint8Array(16);
+        _rng = function whatwgRNG() {
+            crypto.getRandomValues(_rnds8);
+            return _rnds8;
+        };
+    }
+
+    if (!_rng) {
+        // Math.random()-based (RNG)
+        //
+        // If all else fails, use Math.random().    It's fast, but is of unspecified
+        // quality.
+        var    _rnds = new Array(16);
+        _rng = function() {
+            for (var i = 0, r; i < 16; i++) {
+                if ((i & 0x03) === 0) r = Math.random() * 0x100000000;
+                _rnds[i] = r >>> ((i & 0x03) << 3) & 0xff;
+            }
+
+            return _rnds;
+        };
+    }
+
+    // Maps for number <-> hex string conversion
+    var _byteToHex = [];
+    var _hexToByte = {};
+    for (var i = 0; i < 256; i++) {
+        _byteToHex[i] = (i + 0x100).toString(16).substr(1);
+        _hexToByte[_byteToHex[i]] = i;
+    }
+
+    // **`parse()` - Parse a UUID into it's component bytes**
+    function parse(s, buf, offset) {
+        var i = (buf && offset) || 0, ii = 0;
+
+        buf = buf || [];
+        s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
+            if (ii < 16) { // Don't overflow!
+                buf[i + ii++] = _hexToByte[oct];
+            }
+        });
+
+        // Zero out remaining bytes if string was short
+        while (ii < 16) {
+            buf[i + ii++] = 0;
+        }
+
+        return buf;
+    }
+
+    // **`unparse()` - Convert UUID byte array (ala parse()) into a string**
+    function unparse(buf, offset) {
+        var i = offset || 0, bth = _byteToHex;
+        return bth[buf[i++]] + bth[buf[i++]] +
+            bth[buf[i++]] + bth[buf[i++]] + '-' +
+            bth[buf[i++]] + bth[buf[i++]] + '-' +
+            bth[buf[i++]] + bth[buf[i++]] + '-' +
+            bth[buf[i++]] + bth[buf[i++]] + '-' +
+            bth[buf[i++]] + bth[buf[i++]] +
+            bth[buf[i++]] + bth[buf[i++]] +
+            bth[buf[i++]] + bth[buf[i++]];
+    }
+
+    // **`v1()` - Generate time-based UUID**
+    //
+    // Inspired by https://github.com/LiosK/UUID.js
+    // and http://docs.python.org/library/uuid.html
+
+    // random #'s we need to init node and clockseq
+    var _seedBytes = _rng();
+
+    // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
+    var _nodeId = [
+        _seedBytes[0] | 0x01,
+        _seedBytes[1], _seedBytes[2], _seedBytes[3], _seedBytes[4], _seedBytes[5]
+    ];
+
+    // Per 4.2.2, randomize (14 bit) clockseq
+    var _clockseq = (_seedBytes[6] << 8 | _seedBytes[7]) & 0x3fff;
+
+    // Previous uuid creation time
+    var _lastMSecs = 0, _lastNSecs = 0;
+
+    // See https://github.com/broofa/node-uuid for API details
+    function v1(options, buf, offset) {
+        var i = buf && offset || 0;
+        var b = buf || [];
+
+        options = options || {};
+
+        var clockseq = options.clockseq != null ? options.clockseq : _clockseq;
+
+        // UUID timestamps are 100 nano-second units since the Gregorian epoch,
+        // (1582-10-15 00:00).    JSNumbers aren't precise enough for this, so
+        // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
+        // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
+        var msecs = options.msecs != null ? options.msecs : new Date().getTime();
+
+        // Per 4.2.1.2, use count of uuid's generated during the current clock
+        // cycle to simulate higher resolution clock
+        var nsecs = options.nsecs != null ? options.nsecs : _lastNSecs + 1;
+
+        // Time since last uuid creation (in msecs)
+        var dt = (msecs - _lastMSecs) + (nsecs - _lastNSecs)/10000;
+
+        // Per 4.2.1.2, Bump clockseq on clock regression
+        if (dt < 0 && options.clockseq == null) {
+            clockseq = clockseq + 1 & 0x3fff;
+        }
+
+        // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
+        // time interval
+        if ((dt < 0 || msecs > _lastMSecs) && options.nsecs == null) {
+            nsecs = 0;
+        }
+
+        // Per 4.2.1.2 Throw error if too many uuids are requested
+        if (nsecs >= 10000) {
+            throw new Error('uuid.v1(): Can\'t create more than 10M uuids/sec');
+        }
+
+        _lastMSecs = msecs;
+        _lastNSecs = nsecs;
+        _clockseq = clockseq;
+
+        // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
+        msecs += 12219292800000;
+
+        // `time_low`
+        var tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+        b[i++] = tl >>> 24 & 0xff;
+        b[i++] = tl >>> 16 & 0xff;
+        b[i++] = tl >>> 8 & 0xff;
+        b[i++] = tl & 0xff;
+
+        // `time_mid`
+        var tmh = (msecs / 0x100000000 * 10000) & 0xfffffff;
+        b[i++] = tmh >>> 8 & 0xff;
+        b[i++] = tmh & 0xff;
+
+        // `time_high_and_version`
+        b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
+        b[i++] = tmh >>> 16 & 0xff;
+
+        // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
+        b[i++] = clockseq >>> 8 | 0x80;
+
+        // `clock_seq_low`
+        b[i++] = clockseq & 0xff;
+
+        // `node`
+        var node = options.node || _nodeId;
+        for (var n = 0; n < 6; n++) {
+            b[i + n] = node[n];
+        }
+
+        return buf ? buf : unparse(b);
+    }
+    
+    
+/**
+* Cookie maintenance  If you have your own vesion so of these then feel free to use those instead.
+*/
+function setCookie (name, value, expires) {
+	if (!expires) expires = new Date();
+	document.cookie = name + "=" + value + "; expires=" + expires.toGMTString() +";domain=.247sports.com; path=/";
+}
+
+function readCookie(name) {
+    if(document.cookie == '') {
+	return false;
+    } else {
+	var firstChar, lastChar;
+	var theBigCookie = document.cookie;
+	name = name + '=';
+	firstChar = theBigCookie.indexOf(name);
+	if (firstChar != -1) {
+	    firstChar += name.length;
+	    lastChar = theBigCookie.indexOf(';', firstChar);
+	    if(lastChar == -1) lastChar = theBigCookie.length;
+	    return unescape(theBigCookie.substring(firstChar, lastChar));
+	} else {return false;}
+    }
+}
+
+function killCookie(name, path, domain) {
+  var theValue = readCookie(name);
+  if(theValue) {
+        // set an already-expired cookie
+        document.cookie = name + '=' + theValue + '; expires=Fri, 13-Apr-1970 00:00:00 GMT' + ((path)?';path=' + path:'') + ((domain)?';domain=' + domain:'');
+  }
+}
+
+function getValue(cookieName,name) {
+	cookieValue=readCookie(cookieName)
+	findString=name;
+	if (cookieValue) {
+		namePos=cookieValue.indexOf(findString,0);
+		if (namePos==-1) {return false;}
+		valueStart=(cookieValue.indexOf('&',namePos+1)+1);
+		valueEnd=cookieValue.indexOf('&',valueStart+1);
+		if (valueEnd==-1)  valueEnd=cookieValue.length;
+		valueIs=cookieValue.substring(valueStart,valueEnd)
+		if (namePos!=null) {return valueIs;}
+	}
+	else {return false;}
+}
+    </script>
+    <script type="text/javascript">
+     (window.NREUM||(NREUM={})).loader_config={xpid:"VQ4CWFNbGwIAVFVVBgk="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(13),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(14),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(5),t(4),"addEventListener"in window&&t(3),s.xhrWrappable&&t(6),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(16)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],4:[function(t,e,n){var r=t("ee").get("raf"),o=t(16)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],5:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(16)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],6:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){g.push(t),h&&(b?b.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(3);var f=t("ee"),u=f.get("xhr"),d=t(16)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,y="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(y,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===y||a()})},{}],7:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(8),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(11),h=t(10),m=window.XMLHttpRequest;a.features.xhr=!0,t(6),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],8:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],9:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(13),c=t(14),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=o(l+e,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(p+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],10:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],11:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],12:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],13:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],14:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],15:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],16:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(14),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!l.aborted||i){t&&t(n,r,o);for(var a=e(o),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[g[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){w[t]=m(t).concat(e)}function h(t,e){var n=w[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return w[t]||[]}function v(t){return d[t]=d[t]||o(n)}function y(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var w={},g={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:y,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(13),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=b.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+b.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-b.offset}var c=(new Date).getTime(),s=t("handle"),f=t(13),u=t("ee"),d=t(12),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,y=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var w=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},x=v&&y&&y[h]&&!/CriOS/.test(navigator.userAgent),b=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:x,userAgent:d};t(9),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),s("mark",["firstbyte",c],null,"api");var E=0,O=t(15)},{}]},{},["loader",2,7]);
+    </script>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <div class="page clearfix" id="page" style="background-image:url(/images/setup/Sport_Backgrounds/bg_w_soccer.jpg)">
+   <div class="wrapper clearfix">
+    <a class="skip-navigation" href="#nav">
+     Skip to navigation
+    </a>
+    <a class="skip-navigation" href="#mainbody">
+     Skip to content
+    </a>
+    <a class="skip-navigation" href="#site-footer">
+     Skip to footer
+    </a>
+    <header class="site-header" id="site-header" role="banner">
+     <div class="container clearfix">
+      <h1 class="site-title">
+       <a href="/">
+        <span class="text">
+         Athletic &amp; Academic Excellence
+        </span>
+        <span class="title">
+         Cal Poly
+        </span>
+       </a>
+      </h1>
+      <div class="mobile-menu-bar clearfix">
+       <ul class="clearfix">
+        <li>
+         <a href="/composite">
+          <span aria-hidden="true" class="gicon-calendar">
+          </span>
+          <span class="text">
+           Composite
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="/search">
+          <span aria-hidden="true" class="gicon-search">
+          </span>
+          <span class="text">
+           Search
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="#" id="jump-to-nav">
+          <span aria-hidden="true" class="gicon-menu">
+          </span>
+          <span class="text">
+           Menu
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+      <nav aria-label="Main menu" class="dropnav" data-module="dropnav" id="nav" role="navigation">
+       <h1 class="offscreen">
+        Site Navigation
+       </h1>
+       <ul class="clearfix" role="menubar">
+        <li class="nav nav1 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-sports-redesign">
+          Sports
+         </a>
+         <div class="submenu level1 clearfix" id="submenu1">
+          <ul class="clearfix">
+           <li class="has-submenu" data-follow-link="false">
+            <a aria-label="Sports: Men's Sports" href="/navbar-men-redesign">
+             Men's Sports
+            </a>
+            <div class="submenu level2 clearfix">
+             <ul class="clearfix">
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Baseball" href="/sports/bsb/index">
+                Baseball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: Schedule" href="https://www.gopoly.com/sports/bsb/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: Roster" href="https://www.gopoly.com/sports/bsb/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: News" href="/sports/bsb/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: Twitter" href="https://twitter.com/calpolystangs" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: Facebook" href="https://www.facebook.com/calpolystangs" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Baseball: Instagram" href="https://www.instagram.com/calpolystangs" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Basketball" href="/sports/mbkb/index">
+                Basketball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: Schedule" href="/sports/mbkb/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: Roster" href="/sports/mbkb/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: News" href="/sports/mbkb/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: Twitter" href="https://twitter.com/calpolymbb" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: Facebook" href="https://www.facebook.com/CalPolyMBB" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Basketball: Instagram" href="https://instagram.com/calpolymbb/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Cross Country" href="/sports/xc/index">
+                Cross Country
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: Schedule" href="/sports/xc/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: Roster" href="/sports/xc/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: News" href="/sports/xc/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: Twitter" href="https://twitter.com/calpolytrack_xc" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: Facebook" href="https://www.facebook.com/Cal-Poly-Track-and-FieldCross-Country-267077344061/?ref=bookmarks" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Cross Country: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Football" href="/sports/fball/index">
+                Football
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: Schedule" href="https://www.gopoly.com/sports/fball/2019-20/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: Roster" href="https://www.gopoly.com/sports/fball/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: News" href="/sports/fball/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: Twitter" href="https://twitter.com/calpolyfootball" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: Facebook" href="https://www.facebook.com/calpolymustangsfootball/" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Football: Instagram" href="https://www.instagram.com/calpolyfootball/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Golf" href="/sports/mgolf/index">
+                Golf
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: Schedule" href="https://www.gopoly.com/sports/mgolf/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: Roster" href="https://www.gopoly.com/sports/mgolf/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: News" href="/sports/mgolf/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: Twitter" href="https://twitter.com/CPMustangs" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: Facebook" href="https://www.facebook.com/CalPolyMensandWomensGolf" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Golf: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Soccer" href="/sports/msoc/index">
+                Soccer
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: Schedule" href="/sports/msoc/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: Roster" href="/sports/msoc/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: News" href="/sports/msoc/2017-18/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: Twitter" href="https://twitter.com/cpmenssoccer" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: Facebook" href="https://www.facebook.com/CalPolyMensSoccer" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Soccer: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Swimming &amp; Diving" href="/sports/swimdive/index">
+                Swimming &amp; Diving
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: Schedule" href="/sports/swimdive/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: Roster" href="/sports/swimdive/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: News" href="/sports/swimdive/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: Twitter" href="https://twitter.com/CPSwimDive" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: Facebook" href="https://www.facebook.com/CalPolyMustangs" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Swimming &amp; Diving: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Tennis" href="/sports/mten/index">
+                Tennis
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: Schedule" href="/sports/mten/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: Roster" href="/sports/mten/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: News" href="/sports/mten/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: Twitter" href="https://twitter.com/CalPolyMTennis" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: Facebook" href="https://www.facebook.com/cptennis?fref=ts" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Tennis: Instagram" href="https://instagram.com/calpolymenstennis/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Track &amp; Field" href="/sports/track/index">
+                Track &amp; Field
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: Schedule" href="/sports/track/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: Roster" href="/sports/track/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: News" href="/sports/track/2017-18/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: Twitter" href="https://twitter.com/calpolytrack_xc" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: Facebook" href="https://www.facebook.com/Cal-Poly-Track-and-FieldCross-Country-267077344061/?ref=settings" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Track &amp; Field: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Men's Sports: Wrestling" href="/sports/wrest/index">
+                Wrestling
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: Schedule" href="https://www.gopoly.com/sports/wrest/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: Roster" href="https://www.gopoly.com/sports/wrest/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: News" href="/sports/wrest/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: Twitter" href="https://twitter.com/calpolywrestle" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: Facebook" href="https://www.facebook.com/CalPolyWrestle/" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Men's Sports: Wrestling: Instagram" href="https://www.instagram.com/cpwrestle/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+             </ul>
+            </div>
+           </li>
+           <li class="has-submenu" data-follow-link="false">
+            <a aria-label="Sports: Women's Sports" href="/navbar-women-redesign">
+             Women's Sports
+            </a>
+            <div class="submenu level2 clearfix">
+             <ul class="clearfix">
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Basketball" href="/sports/wbkb/index">
+                Basketball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: Schedule" href="/sports/wbkb/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: Roster" href="/sports/wbkb/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: News" href="/sports/wbkb/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: Twitter" href="https://twitter.com/CalPolyWBB" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: Facebook" href="https://www.facebook.com/pages/Cal-Poly-Womens-Basketball/163867381550" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Basketball: Instagram" href="https://www.instagram.com/cpmustangs/?hl=en" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Beach Volleyball" href="/sports/beachvball/index">
+                Beach Volleyball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: Schedule" href="/sports/beachvball/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: Roster" href="/sports/beachvball/2017-18/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: News" href="/sports/beachvball/2017-18/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: Twitter" href="https://twitter.com/calpolybeach" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: Facebook" href="https://www.facebook.com/calpolymustangs" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Beach Volleyball: Instagram" href="https://www.instagram.com/calpolybeach/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Cross Country" href="/sports/xc/index">
+                Cross Country
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: Schedule" href="/sports/xc/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: Roster" href="/sports/xc/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: News" href="/sports/xc/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: Twitter" href="https://twitter.com/calpolytrack_xc" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: Facebook" href="https://www.facebook.com/Cal-Poly-Track-and-FieldCross-Country-267077344061/?ref=bookmarks" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Cross Country: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Golf" href="/sports/wgolf/index">
+                Golf
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: Schedule" href="https://www.gopoly.com/sports/wgolf/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: Roster" href="https://www.gopoly.com/sports/wgolf/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: News" href="/sports/wgolf/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: Twitter" href="https://twitter.com/calpolygolf" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: Facebook" href="https://www.facebook.com/CalPolyMensandWomensGolf/" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Golf: Instagram" href="https://instagram.com/calpolygolf" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Soccer" href="/sports/wsoc/index">
+                Soccer
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: Schedule" href="/sports/wsoc/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: Roster" href="/sports/wsoc/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: News" href="/sports/wsoc/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: Twitter" href="https://twitter.com/cpwomenssoccer" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: Facebook" href="https://www.facebook.com/pages/Cal-Poly-Womens-Soccer/116998901714266" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Soccer: Instagram" href="https://instagram.com/calpolysoccer" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Softball" href="/sports/sball/index">
+                Softball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: Schedule" href="/sports/sball/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: Roster" href="/sports/sball/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: News" href="/sports/sball/2017-18/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: Twitter" href="https://twitter.com/calpolysoftball" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: Facebook" href="https://www.facebook.com/pages/Cal-Poly-Softball/200883423276915" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Softball: Instagram" href="https://www.instagram.com/calpolysoftball/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Swimming &amp; Diving" href="/sports/swimdive/index">
+                Swimming &amp; Diving
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: Schedule" href="/sports/swimdive/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: Roster" href="/sports/swimdive/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: News" href="/sports/swimdive/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: Twitter" href="https://twitter.com/CPSwimDive" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: Facebook" href="https://www.facebook.com/CalPolyMustangs" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Swimming &amp; Diving: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Tennis" href="/sports/wten/index">
+                Tennis
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: Schedule" href="/sports/wten/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: Roster" href="/sports/wten/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: News" href="/sports/wten/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: Twitter" href="https://twitter.com/CalPolyWTennis" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: Facebook" href="https://www.facebook.com/calpolytennis/" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Tennis: Instagram" href="https://www.instagram.com/calpolywtennis/?hl=en" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Track &amp; Field" href="/sports/track/index">
+                Track &amp; Field
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: Schedule" href="/sports/track/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: Roster" href="/sports/track/2018-19/mwroster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: News" href="/sports/track/2017-18/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: Twitter" href="https://twitter.com/calpolytrack_xc" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: Facebook" href="https://www.facebook.com/Cal-Poly-Track-and-FieldCross-Country-267077344061/?ref=settings" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Track &amp; Field: Instagram" href="https://www.instagram.com/cpmustangs/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+              <li class="has-submenu" data-follow-link="true">
+               <a aria-label="Sports: Women's Sports: Volleyball" href="/sports/wvball/index">
+                Volleyball
+               </a>
+               <div class="submenu level3 clearfix">
+                <ul class="clearfix">
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: Schedule" href="/sports/wvball/2018-19/schedule">
+                   Schedule
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: Roster" href="/sports/wvball/2018-19/roster">
+                   Roster
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: News" href="/sports/wvball/2018-19/news">
+                   News
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: Twitter" href="https://twitter.com/CalPolyVolley" target="_blank">
+                   Twitter
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: Facebook" href="https://www.facebook.com/Cal-Poly-Volleyball-275585039196446/timeline/" target="_blank">
+                   Facebook
+                  </a>
+                 </li>
+                 <li>
+                  <a aria-label="Sports: Women's Sports: Volleyball: Instagram" href="https://instagram.com/calpolyvolley/" target="_blank">
+                   Instagram
+                  </a>
+                 </li>
+                </ul>
+               </div>
+              </li>
+             </ul>
+            </div>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav nav2 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-tickets">
+          Tickets
+         </a>
+         <div class="submenu level1 clearfix" id="submenu2">
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Tickets: Buy Tickets" href="https://tickets.calpoly.edu/Online/article/athletics" target="_blank">
+             Buy Tickets
+            </a>
+           </li>
+           <li>
+            <a aria-label="Tickets: General Information" href="/tickets">
+             General Information
+            </a>
+           </li>
+           <li>
+            <a aria-label="Tickets: Parking" href="/fan_zone/parking">
+             Parking
+            </a>
+           </li>
+           <li>
+            <a aria-label="Tickets: Seating Maps" href="/tickets/seating_maps">
+             Seating Maps
+            </a>
+           </li>
+           <li>
+            <a aria-label="Tickets: Stampede Club" href="/support/giving/stampede_club/benefits/index">
+             Stampede Club
+            </a>
+           </li>
+           <li>
+            <a aria-label="Tickets: Donation Requests" href="/tickets/donation_requests">
+             Donation Requests
+            </a>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav nav3 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-insideathletics">
+          Department
+         </a>
+         <div class="submenu level1 clearfix" id="submenu3">
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Department: Academic Services" href="/inside_athletics/student_services/Student-Athlete_Academic_Services">
+             Academic Services
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Athletics Director Council" href="/support/AD_Council">
+             Athletics Director Council
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Branding Guidelines" href="/inside_athletics/branding_guidelines">
+             Branding Guidelines
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Camps and Clinics" href="/inside_athletics/camps_and_clinics/index">
+             Camps and Clinics
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Compliance" href="/inside_athletics/NCAA_Rules/Compliance">
+             Compliance
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Facilities" href="/insideathletics/facilities">
+             Facilities
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: General News" href="http://calpoly.prestosports.com/genrel/index">
+             General News
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Hall of Fame" href="/inside_athletics/hof/roster">
+             Hall of Fame
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Mission Statement" href="/inside_athletics/mission">
+             Mission Statement
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: SAAC" href="/inside_athletics/blockp">
+             SAAC
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Spirit Groups" href="/fan_zone/spirit_groups/index">
+             Spirit Groups
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Department: Sports Medicine" href="/inside_athletics/athletic_training/index">
+             Sports Medicine
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Staff Directory" href="/inside_athletics/directory/index">
+             Staff Directory
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Strategic Plan" href="/inside_athletics/2017strategicplan.pdf">
+             Strategic Plan
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: The Mustang Way" href="/inside_athletics/the_mustang_way">
+             The Mustang Way
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Title IX" href="https://equalopportunity.calpoly.edu/content/title-ix" target="_blank">
+             Title IX
+            </a>
+           </li>
+           <li>
+            <a aria-label="Department: Varsity Club" href="/support/Varsity_Club">
+             Varsity Club
+            </a>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav nav4 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-fanzone">
+          Fan Zone
+         </a>
+         <div class="submenu level1 clearfix" id="submenu4">
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Fan Zone: Coaches Show" href="/fanzone/coachesshow">
+             Coaches Show
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Live Audio" href="http://portal.stretchinternet.com/calpoly/" target="_blank">
+             Live Audio
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Athlete of the Week" href="/aotw/index">
+             Athlete of the Week
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Blue-Green Rivalry" href="/insideathletics/blue-green">
+             Blue-Green Rivalry
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Football Game Day Central" href="https://www.gopoly.com/sports/fball/2018-19/gameday/index">
+             Football Game Day Central
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Football Tailgating" href="https://www.gopoly.com/fan_zone/Football_Tailgating">
+             Football Tailgating
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Gameday Promotions" href="/promotions">
+             Gameday Promotions
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: History &amp; Tradition" href="/fan_zone/traditions/traditions">
+             History &amp; Tradition
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Mobile App" href="https://www.gopoly.com/frontrow">
+             Mobile App
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Mustang Kids Club" href="/kidsclub">
+             Mustang Kids Club
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Social Media Directory" href="/fanzone/socialmedia">
+             Social Media Directory
+            </a>
+           </li>
+          </ul>
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Fan Zone: Stang Gang" href="/stanggang">
+             Stang Gang
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Video Central" href="/video/index">
+             Video Central
+            </a>
+           </li>
+           <li>
+            <a aria-label="Fan Zone: Visiting San Luis Obispo" href="http://www.sanluisobispovacations.com" target="_blank">
+             Visiting San Luis Obispo
+            </a>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav nav5 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-recruits">
+          Recruits
+         </a>
+         <div class="submenu level1 clearfix" id="submenu5">
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Recruits: Why Cal Poly?" href="/insideathletics/whycalpoly">
+             Why Cal Poly?
+            </a>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+        <li class="nav nav6 has-submenu" data-follow-link="false">
+         <a class="nav-link" href="/navbar-giving">
+          Giving
+         </a>
+         <div class="submenu level1 clearfix" id="submenu6">
+          <ul class="clearfix">
+           <li>
+            <a aria-label="Giving: Giving Home" href="https://www.gopoly.com/giving-new/index">
+             Giving Home
+            </a>
+           </li>
+           <li>
+            <a aria-label="Giving: Join Stampede Club" href="https://tickets.calpoly.edu/Online/default.asp?BOparam::WScontent::loadArticle::permalink=stampede&amp;BOparam::WScontent::loadArticle::context_id=" target="_blank">
+             Join Stampede Club
+            </a>
+           </li>
+           <li>
+            <a aria-label="Giving: Make a Gift Now" href="https://securelb.imodules.com/s/699/hybrid-form/index.aspx?sid=699&amp;gid=1&amp;sitebuilder=1&amp;pgid=961&amp;cid=2272&amp;bledit=1&amp;dids=168.173.181.417.287.169.171.346.175.183.184.172.177.186.188.268.302.&amp;sort=1" target="_blank">
+             Make a Gift Now
+            </a>
+           </li>
+           <li>
+            <a aria-label="Giving: Special Events" href="http://gopoly.com/support/giving/special_events">
+             Special Events
+            </a>
+           </li>
+           <li>
+            <a aria-label="Giving: Contact Us" href="https://www.gopoly.com/giving-new/Contact_Us">
+             Contact Us
+            </a>
+           </li>
+          </ul>
+          <div class="dropdown-sponsor">
+           <a href="http://www.dignityhealth.org/frenchhospital/">
+            <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+           </a>
+          </div>
+         </div>
+        </li>
+       </ul>
+       <div class="none close">
+        Close
+       </div>
+      </nav>
+      <a class="logo-dignity" href="http://www.dignityhealth.org/frenchhospital/" target="_blank">
+       <img alt="Dignity Health" src="/images/setup/2018_logo_dignity_health.png"/>
+      </a>
+      <div class="social-links">
+       <ul class="clearfix">
+        <li>
+         <a href="https://twitter.com/search?q=%23RideHigh" target="_blank">
+          <span class="icon gicon-#ridehigh">
+          </span>
+          <span class="text">
+           #RideHigh
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.facebook.com/CalPolyMustangs" target="_blank">
+          <span class="icon gicon-facebook-fill">
+          </span>
+          <span class="text">
+           Facebook-fill
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://twitter.com/CPMustangs" target="_blank">
+          <span class="icon gicon-twitter">
+          </span>
+          <span class="text">
+           Twitter
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.youtube.com/user/CalPolyAthletics" target="_blank">
+          <span class="icon gicon-youtube">
+          </span>
+          <span class="text">
+           Youtube
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://www.instagram.com/cpmustangs/" target="_blank">
+          <span class="icon gicon-instagram">
+          </span>
+          <span class="text">
+           Instagram
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="/composite">
+          <span class="icon gicon-calendar">
+          </span>
+          <span class="text">
+           Calendar
+          </span>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <script>
+      $('.dropnav .nav').click(function() {
+	$(this).siblings().removeClass('saf-focus');
+	$(this).toggleClass('saf-focus');
+});
+$(document).mouseup(function (e) {
+    var container = $(".dropnav .submenu");
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        $('.dropnav .submenu').parent().removeClass('saf-focus');
+    }
+});
+     </script>
+    </header>
+    <div class="secondary-nav clearfix" data-module="nav">
+     <div class="clearfix">
+      <h1>
+       Women's Soccer
+      </h1>
+      <ul class="clearfix">
+       <li>
+        <a href="/sports/wsoc/index">
+         Women's Soccer Home
+        </a>
+       </li>
+       <li>
+        <a href="/sports/wsoc/2018-19/roster">
+         Roster
+        </a>
+       </li>
+       <li>
+        <a href="/sports/wsoc/2018-19/schedule">
+         Schedule
+        </a>
+       </li>
+       <li>
+        <a href="/sports/wsoc/2018-19/files/2018CPWS.pdf">
+         Statistics
+        </a>
+       </li>
+       <li class="has-nav more">
+        <a aria-label="press tab to read additional links" role="button" tabindex="0">
+         More+
+        </a>
+        <ul class="clearfix">
+         <li>
+          <a href="/sports/wsoc/2018-19/news">
+           News
+          </a>
+         </li>
+         <li>
+          <a href="/sports/wsoc/coaches/index">
+           Coaching Staff
+          </a>
+         </li>
+         <li>
+          <a href="/kidsclub">
+           Mustang Kids Club
+          </a>
+         </li>
+         <li>
+          <a href="/insideathletics/camps">
+           Camp Info
+          </a>
+         </li>
+         <li>
+          <a href="/sports/wsoc/2013-14/files/SoccerBrocher_1010.pdf">
+           Women's Soccer Endowment
+          </a>
+         </li>
+         <li>
+          <a href="https://issuu.com/calpoly/docs/2018calpolywomenssoccerhistory" target="_blank">
+           Record Book
+          </a>
+         </li>
+         <li>
+          <a href="/sports/wsoc/Archives">
+           Archives
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <script async="" data-uid="UA-1939879-1" src="/info/ga/include.js" type="text/javascript">
+    </script>
+    <div class="body-container clearfix">
+     <main class="mainbody clearfix" id="mainbody" role="main">
+      <div class="mod-roster" data-module="roster-layout" data-page-title="2018 Cal Poly Women's Soccer Roster - Cal Poly">
+       <div class="roster-archive clearfix">
+        <select aria-label="Change the season by selecting an option from the list below">
+         <option selected="selected">
+          Archive Rosters
+         </option>
+         <option value="/sports/wsoc/2017-18/roster">
+          2017-18
+         </option>
+         <option value="/sports/wsoc/2016-17/roster">
+          2016-17
+         </option>
+         <option value="/sports/wsoc/2015-16/roster">
+          2015-16
+         </option>
+         <option value="/sports/wsoc/2014-15/roster">
+          2014-15
+         </option>
+         <option value="/sports/wsoc/2013-14/roster">
+          2013-14
+         </option>
+         <option value="/sports/wsoc/2012-13/roster">
+          2012-13
+         </option>
+         <option value="/sports/wsoc/2011-12/roster">
+          2011-12
+         </option>
+        </select>
+       </div>
+       <div class="align-center">
+        <h1>
+         2018 Cal Poly Women's Soccer Roster
+        </h1>
+       </div>
+       <div class="roster">
+        <table>
+         <thead>
+          <tr class="roster-header accent-bg">
+           <th class="col1" scope="col">
+            <button aria-label="sort table using number: column" class="sortable" role="button" title="Sort using this column" value="/sports/wsoc/2018-19/roster?sort=number">
+             No.
+            </button>
+           </th>
+           <th class="col2" scope="col">
+            <button aria-label="sort table using last_name: column" class="sortable" role="button" title="Sort using this column" value="/sports/wsoc/2018-19/roster?sort=last_name">
+             Name
+            </button>
+           </th>
+           <th class="col3" scope="col">
+            <button aria-label="sort table using year: column" class="sortable" role="button" title="Sort using this column" value="/sports/wsoc/2018-19/roster?sort=year">
+             Class
+            </button>
+           </th>
+           <th class="col4" scope="col">
+            <button aria-label="sort table using position: column" class="sortable" role="button" title="Sort using this column" value="/sports/wsoc/2018-19/roster?sort=position">
+             Position
+            </button>
+           </th>
+           <th class="col5" scope="col">
+            Height
+           </th>
+           <th class="col6" scope="col">
+            Hometown
+           </th>
+           <th class="col7" scope="col">
+            High School
+           </th>
+           <th class="col8" scope="col">
+            Club
+           </th>
+          </tr>
+         </thead>
+         <tbody>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            0
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Sophia Brown: jersey number 0: full bio" href="/sports/wsoc/2018-19/bios/brown_sophia_slo5">
+             <img alt="Sophia Brown full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Brown9586.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Sophia
+Brown
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Jr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            GK
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-8
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Pleasanton, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Foothill HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Rage SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            1
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Molly Monroe: jersey number 1: full bio" href="/sports/wsoc/2018-19/bios/monroe_molly_r7au">
+             <img alt="Molly Monroe full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Monroe9587.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Molly
+Monroe
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            RFr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            GK
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-8
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Sammamish, WA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Skyline HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Eastside FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            2
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Sophia Mendoza: jersey number 2: full bio" href="/sports/wsoc/2018-19/bios/mendoza_sophia_v882">
+             <img alt="Sophia Mendoza full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Mendoza9584.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Sophia
+Mendoza
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-2
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Jose, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Archbishop Mitty HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Santa Clara Sporting SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            3
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Ashley Kirchick: jersey number 3: full bio" href="/sports/wsoc/2018-19/bios/kirchick_ashley_vvw6">
+             <img alt="Ashley Kirchick full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Kirchick9565.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Ashley
+Kirchick
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Jose, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Archbishop Mitty HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Santa Clara Sporting SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            4
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Emily Talmi: jersey number 4: full bio" href="/sports/wsoc/2018-19/bios/talmi_emily_ppae">
+             <img alt="Emily Talmi full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Talmi9596.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Emily
+Talmi
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Granite Bay, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Granite Bay HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Placer United SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            5
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Chelsea Barry: jersey number 5: full bio" href="/sports/wsoc/2018-19/bios/barry_chelsea_918j">
+             <img alt="Chelsea Barry full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Barry9569.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Chelsea
+Barry
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Danville, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Monte Vista HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Mustang SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            6
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Megan Demijohn: jersey number 6: full bio" href="/sports/wsoc/2018-19/bios/demijohn_megan_xy4s">
+             <img alt="Megan Demijohn full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Demijohn9575.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Megan
+Demijohn
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Jr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Thousand Oaks, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Oaks Christian HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Eagles SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            7
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Senna Brennan: jersey number 7: full bio" href="/sports/wsoc/2018-19/bios/brennan_senna_jpy7">
+             <img alt="Senna Brennan full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Brennan9568.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Senna
+Brennan
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            RJr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-2
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Huntington Beach, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Marina HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Beach FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            8
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Macy Vrabel: jersey number 8: full bio" href="/sports/wsoc/2018-19/bios/vrabel_macy_lk86">
+             <img alt="Macy Vrabel full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Vrabel9572.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Macy
+Vrabel
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-6
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Diego, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Torrey Pines HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Diego Surf SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            9
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Jordan Patane: jersey number 9: full bio" href="/sports/wsoc/2018-19/bios/patane_jordan_iubv">
+             <img alt="Jordan Patane full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Patane9576.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Jordan
+Patane
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Jr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-0
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Diego, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Point Loma HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Diego Surf SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            10
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Kelly Kessloff: jersey number 10: full bio" href="/sports/wsoc/2018-19/bios/kessloff_kelly_3pvc">
+             <img alt="Kelly Kessloff full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Kessloff9571.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Kelly
+Kessloff
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-4
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Cypress, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Cypress HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Beach FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            11
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Stephanie Magellan: jersey number 11: full bio" href="/sports/wsoc/2018-19/bios/magellan_stephanie_ty2y">
+             <img alt="Stephanie Magellan full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Magellan9570.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Stephanie
+ Magellan
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-4
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Jose, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Cupertino HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            De Anza Force SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            12
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Georgina Stiegeler: jersey number 12: full bio" href="/sports/wsoc/2018-19/bios/stiegeler_georgina_ms3u">
+             <img alt="Georgina Stiegeler full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Stiegeler9574.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Georgina
+Stiegeler
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            RSo.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-3
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Daly City, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            St. Ignatius Prep
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            MVLA Pride
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            13
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Jessica Johnson: jersey number 13: full bio" href="/sports/wsoc/2018-19/bios/johnson_jessica_v22m">
+             <img alt="Jessica Johnson full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Johnson9573.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Jessica
+Johnson
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Jr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Lakewood, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            St. Joseph HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Beach FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            14
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Sydney Spina: jersey number 14: full bio" href="/sports/wsoc/2018-19/bios/spina_sydney_zgp0">
+             <img alt="Sydney Spina full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Spina9580.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Sydney
+Spina
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-4
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Novato, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Novato HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Marin FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            15
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Megan Hansen: jersey number 15: full bio" href="/sports/wsoc/2018-19/bios/hansen_megan_phva">
+             <img alt="Megan Hansen full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Hansen9594.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Megan
+Hansen
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Sacramento, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Rio Americano HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Juan SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            16
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Brooke Oleson: jersey number 16: full bio" href="/sports/wsoc/2018-19/bios/oleson_brooke_j1n3">
+             <img alt="Brooke Oleson full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Oleson9592.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Brooke
+Oleson
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Salinas, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Salinas HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            California Thorns FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            17
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Michaela Olney: jersey number 17: full bio" href="/sports/wsoc/2018-19/bios/olney_michaela_ytka">
+             <img alt="Michaela Olney full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Olney9567.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Michaela
+Olney
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-4
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Santa Maria, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Righetti HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Luis Obispo SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            18
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Danielle Anderson: jersey number 18: full bio" href="/sports/wsoc/2018-19/bios/anderson_danielle_xtac">
+             <img alt="Danielle Anderson full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Anderson9579.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Danielle
+Anderson
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Santa Barbara, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            San Marcos HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Santa Barbara SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            19
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Heather Huene: jersey number 19: full bio" href="/sports/wsoc/2018-19/bios/huene_heather_cd6b">
+             <img alt="Heather Huene full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Huene9589.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Heather
+Huene
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-6
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Reno, NV
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Galena HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Sagebrush SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            20
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Emma Hotaling: jersey number 20: full bio" href="/sports/wsoc/2018-19/bios/hotaling_emma_2j87">
+             <img alt="Emma Hotaling full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Hotaling9591.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Emma
+Hotaling
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-6
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Morro Bay, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Morro Bay HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Luis Obispo SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            21
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Sidra Bugsch: jersey number 21: full bio" href="/sports/wsoc/2018-19/bios/bugsch_sidra_dt5f">
+             <img alt="Sidra Bugsch full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Bugsch9588.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Sidra
+Bugsch
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Davis, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Davis Senior HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Davis Legacy SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            22
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Grace Park: jersey number 22: full bio" href="/sports/wsoc/2018-19/bios/park_grace_1gvl">
+             <img alt="Grace Park full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Park9578.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Grace
+Park
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            So.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Luis Obispo, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            San Luis Obispo HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Luis Obispo SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            23
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Elle Gallmann: jersey number 23: full bio" href="/sports/wsoc/2018-19/bios/gallmann_elle_8ts0">
+             <img alt="Elle Gallmann full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Gallmann9582.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Elle
+Gallmann
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            RFr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-10
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Los Gatos, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Leigh HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            De Anza Force SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            26
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Ava McCray: jersey number 26: full bio" href="/sports/wsoc/2018-19/bios/mccray_ava_7e7c">
+             <img alt="Ava McCray full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/McCray9583.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Ava
+McCray
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Davis, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Davis Senior HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Davis Legacy SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            27
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Clare Murphy: jersey number 27: full bio" href="/sports/wsoc/2018-19/bios/murphy_clare_sbk7">
+             <img alt="Clare Murphy full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Murphy9597.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Clare
+Murphy
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Granite Bay, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Granite Bay HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Placer United SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            28
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Mackenzie George: jersey number 28: full bio" href="/sports/wsoc/2018-19/bios/george_mackenzie_0212">
+             <img alt="Mackenzie George full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/George9598.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Mackenzie
+George
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-3
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Roseville, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Woodcreek HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Placer United SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            30
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="MeJ Carpentier: jersey number 30: full bio" href="/sports/wsoc/2018-19/bios/carpentier_mej_59oh">
+             <img alt="MeJ Carpentier full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Carpentier9585.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             MeJ
+Carpentier
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-6
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Clemente, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Saddleback Valley Christian HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Slammers FC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            31
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Monserrat Hernandez Marquez: jersey number 31: full bio" href="/sports/wsoc/2018-19/bios/hernandez_marquez_monserrat_n05k">
+             <img alt="Monserrat Hernandez Marquez full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/HernandezMarquez9593.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Monserrat
+Hernandez Marquez
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-2
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Watsonville, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Aptos HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Santa Cruz County Breakers
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            32
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Brooke Rubinstein: jersey number 32: full bio" href="/sports/wsoc/2018-19/bios/rubinstein_brooke_tp6y">
+             <img alt="Brooke Rubinstein full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Rubinstein9590.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Brooke
+Rubinstein
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-5
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Davis, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Davis Senior HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Davis Legacy SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            33
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Madison Williams: jersey number 33: full bio" href="/sports/wsoc/2018-19/bios/williams_madison_1wfc">
+             <img alt="Madison Williams full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Williams9600.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Madison
+Williams
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            F
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Fort Collins, CO
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Rocky Mountain HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            Arsenal Colorado
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            36
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Lexi Marietti: jersey number 36: full bio" href="/sports/wsoc/2018-19/bios/marietti_lexi_bnjc">
+             <img alt="Lexi Marietti full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Marietti9566.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Lexi
+Marietti
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            RJr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            D
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-7
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            Dana Point, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            Dana Hills HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            So Cal Blues SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            44
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Sydney Knauer: jersey number 44: full bio" href="/sports/wsoc/2018-19/bios/knauer_sydney_dbc0">
+             <img alt="Sydney Knauer full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/SK579627.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Sydney
+Knauer
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Sr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            M
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-8
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Luis Obispo, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            San Luis Obispo HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            San Luis Obispo SC
+           </td>
+          </tr>
+          <tr>
+           <td class="number">
+            <span class="label">
+             No.:
+            </span>
+            99
+           </td>
+           <th class="name" scope="row">
+            <a aria-label="Ava Dorvillier: jersey number 99: full bio" href="/sports/wsoc/2018-19/bios/dorvillier_ava_b3ew">
+             <img alt="Ava Dorvillier full bio" class="headshot lazyload" data-src="/sports/wsoc/2018-19/bios/Dorvillier9599.jpg?max_width=300" src="/info/images/spacer.gif"/>
+             Ava
+Dorvillier
+            </a>
+           </th>
+           <td>
+            <span class="label">
+             Class:
+            </span>
+            Fr.
+           </td>
+           <td>
+            <span class="label">
+             Position:
+            </span>
+            GK
+           </td>
+           <td>
+            <span class="label">
+             Height:
+            </span>
+            5-8
+           </td>
+           <td>
+            <span class="label">
+             Hometown:
+            </span>
+            San Diego, CA
+           </td>
+           <td>
+            <span class="label">
+             High School:
+            </span>
+            University City HS
+           </td>
+           <td>
+            <span class="label">
+             Club:
+            </span>
+            LA Galaxy SD
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <link href="/sports/wsoc/2018-19/roster?feed=rss_2.0" rel="alternate" title="2018 Cal Poly Women's Soccer Roster" type="application/rss+xml"/>
+      <script async="" data-uid="UA-1939879-1" src="/info/ga/include.js" type="text/javascript">
+      </script>
+      <div class="share-buttons clearfix" data-module="share-buttons">
+       <div class="share-btn facebook">
+        <a aria-label="Share this page on Facebook" class="addthis_button_facebook" role="button">
+         <span class="gicon-facebook">
+         </span>
+         <span class="text">
+          Facebook
+         </span>
+        </a>
+       </div>
+       <div class="share-btn twitter">
+        <a aria-label="Share this page on Twitter" class="addthis_button_twitter" role="button">
+         <span class="gicon-twitter">
+         </span>
+         <span class="text">
+          Twitter
+         </span>
+        </a>
+       </div>
+       <div class="share-btn gplus">
+        <a aria-label="Share this page on Google+" class="addthis_button_google_plusone_share" role="button">
+         <span class="gicon-gplus">
+         </span>
+         <span class="text">
+          Google+
+         </span>
+        </a>
+       </div>
+       <div class="share-btn email">
+        <a aria-label="Share this page via email" class="addthis_button_email" role="button">
+         <span class="gicon-mail">
+         </span>
+         <span class="text">
+          Email
+         </span>
+        </a>
+       </div>
+       <div class="share-btn print">
+        <a aria-label="Print this page" class="printer-friendly" href="https://www.gopoly.com/sports/wsoc/2018-19/roster?dec=printer-decorator" role="button" target="_blank" title="Print">
+         <span class="gicon-print">
+         </span>
+         <span class="text">
+          Print
+         </span>
+        </a>
+       </div>
+       <div class="share-btn addthis">
+        <a aria-label="More Sharing Services" class="addthis_button_more" role="button">
+         <span class="gicon-addthis">
+         </span>
+         <span class="text">
+          Addthis
+         </span>
+        </a>
+       </div>
+      </div>
+      <div class="gpt-adhesion-placeholder">
+       <div id="gpt-ad-adhesion">
+        <script type="text/javascript">
+         googletag.cmd.push(function() { googletag.display('gpt-ad-adhesion'); });
+        </script>
+       </div>
+      </div>
+      <script>
+       (function($) {
+    $(window).on('endscroll', function() {
+        if ($(window).scrollTop() >= ($(window).height() / 3)) {
+            $('.gpt-adhesion-placeholder').addClass('collapse');
+        } else {
+            $('.gpt-adhesion-placeholder').removeClass('collapse');
+        }
+    });
+})(jQuery);
+      </script>
+     </main>
+    </div>
+    <footer class="site-footer" id="site-footer" role="contentinfo">
+     <div class="container clearfix">
+      <p class="footer-text">
+       <a class="site-title" href="/">
+        Cal Poly Athletics
+       </a>
+       Mott Athletics Center
+       <span>
+       </span>
+       1 Grand Avenue. San Luis Obispo, CA 93407-0388
+       <br/>
+       <a href="https://accessibility.calpoly.edu/website-accessibility-statement">
+        Web Accessibility Statement
+       </a>
+       /
+       <a href="https://www.calpoly.edu/privacy">
+        Privacy Notice
+       </a>
+      </p>
+      <div class="navbar-image footer-logos">
+       <ul class="clearfix">
+        <li>
+         <a aria-label="Learfield" href="http://learfieldsports.com/university-partners/mustangs-sports-properties/" target="_blank">
+          <img alt="Learfield" class="lazyload" data-src="/images/setup/2018_footer_logo_1.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="BigWest" href="http://www.bigwest.org/" target="_blank">
+          <img alt="BigWest" class="lazyload" data-src="/images/setup/2018_footer_logo_2.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="PAC 12" href="http://www.pac-12.com/" target="_blank">
+          <img alt="PAC 12" class="lazyload" data-src="/images/setup/2018_footer_logo_3.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="NCAA" href="http://www.ncaa.org/" target="_blank">
+          <img alt="NCAA" class="lazyload" data-src="/images/setup/2018_footer_logo_4.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="Cal Poly" href="http://www.calpoly.edu/" target="_blank">
+          <img alt="Cal Poly" class="lazyload" data-src="/images/setup/2018_footer_logo_5.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="BigSky" href="http://www.bigskyconf.com/" target="_blank">
+          <img alt="BigSky" class="lazyload" data-src="/images/setup/2018_footer_logo_6.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="MPSF" href="http://www.mpsports.org/" target="_blank">
+          <img alt="MPSF" class="lazyload" data-src="/images/setup/2018_footer_logo_7.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="Adidas" href="https://www.adidas.com/us" target="_blank">
+          <img alt="Adidas" class="lazyload" data-src="/images/setup/2018_footer_logo_8.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+        <li>
+         <a aria-label="PrestoSports" href="http://www.prestosports.com" target="_blank">
+          <img alt="PrestoSports" class="lazyload" data-src="/images/setup/2018_footer_logo_9.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script src="/js/sticky-header.js">
+  </script>
+  <script type="text/javascript">
+   var _qevents = _qevents || [];(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge")+ ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);})();
+  </script>
+  <script type="text/javascript">
+   _qevents.push( { qacct:"p-c1MZx5LfVe-Xw"} );
+  </script>
+  <noscript>
+   <div style="display: none;">
+    <img alt="" height="1" src="http://pixel.quantserve.com/pixel/p-c1MZx5LfVe-Xw" width="1"/>
+   </div>
+  </noscript>
+  <script>
+   var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "19291688" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();
+  </script>
+  <noscript>
+   <img alt="" src="http://b.scorecardresearch.com/p?c1=2&amp;c2=19291688&amp;cv=2.0&amp;cj=1"/>
+  </noscript>
+  <script src="https://cdn.prestosports.com/action/cdn/info/cookie-handler.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(function() {
+	if (readCookie('adminuser')) {
+		$('body').append('<span id="edit-page-btn" style="display: block; padding: 10px; z-index: 9999; background: #000; color: #fff; font-size: 12px; position: fixed; right: 0; top: 0; cursor: default">Edit Page</span>');
+		$('#edit-page-btn').click(function() {
+			url = document.location.protocol + '//' + document.location.hostname
+			if (document.location.port) url += ':' + document.location.port;
+			url += '/admin/content/wiki/g2g';
+			url += document.location.pathname;
+			window.location = url;
+		});
+	}
+});
+  </script>
+  <script type="text/javascript">
+   $(function() {
+  if (window.self == window.top) {
+    return;
+  }
+  var heroic = document.referrer.indexOf("herosports.com/");
+  if (heroic > -1) {
+    alert("We do not allow HERO Sports to frame our site.");
+    window.top.location = window.location;
+  }
+});
+  </script>
+  <script data-main="/info/main.js" src="/info/vendor/require.js">
+  </script>
+  <script type="text/javascript">
+   window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"a8324e80d1","agent":"","beacon":"bam.nr-data.net","applicationTime":537,"applicationID":"1004718","transactionName":"MgcAZENYXhJYVkFdXQtNJFldTVUTFnFaWVMMDEJeUFRVQV9cWUBXFw==","queueTime":0}
+  </script>
+ </body>
+</html>
