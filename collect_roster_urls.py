@@ -5,16 +5,19 @@ Data is collected from Wikipedia and a Google search for current rosters.
 Data is saved to a local .csv file.
 
 These modules are required:
-pip install google
-pip install wikitables
+pip install --user google
+pip install --user wikitables
 """
 
 import argparse
-import logging
 from googlesearch import search
+import logging
+import re
+from urllib.parse import urlparse, urlunparse, parse_qs
 from wikitables import import_tables
 
 LOGFILE = '/tmp/collect_roster_urls.log'
+LOGGER = None
 
 
 def _clean_text(text):
@@ -73,40 +76,54 @@ def _parse_school_data(programs, schools_filter):
   return schools
 
 
+def _standardize_url(url):
+  """Removes extranious data from the url and standardizes the format."""
+  if any([p in url for p in ['roster.aspx', 'index.aspx', 'schedule.aspx']]):
+    parts = urlparse(url)
+    params = parse_qs(parts.query)
+    qs = None
+    # Only save the path= query string
+    if 'path' in params:
+      # The dict value is a list, so search all values in the list
+      val = [v for v in params['path'] if 'soc' in v]
+      if val:
+        qs = 'path={}'.format(val[0])
+      else:
+        # If a different sport was collected in the url, change it to wsoc
+        qs = 'path=wsoc'
+    path = parts.path.replace('index', 'roster')
+    path = parts.path.replace('schedule', 'roster')
+    url = urlunparse((parts.scheme, parts.netloc, path, None, qs, None))
+  # Remove any year specification, e.g., 2019-2020 at the end of a url. The
+  # default /roster path will navigate to the current year.
+  url = re.sub(r'roster\/\d{2,4}-*\d{0,4}$', 'roster', url)
+  return url
+
+
 def _search_for_roster_urls(schools):
   """Searches Google for the roster URL of each school.
 
   Modifies the input dict by adding a 'Url' field.
 
   Args:
-    schools: Dict where each key is the school name.
+    schools: A dict of school data.
   """
   for school in schools.keys():
     q = "{} women's soccer roster".format(school)
     for url in search(query=q, num=1, stop=10):
-      found = False
-      for expected_url_clue in ['roster.aspx', 'SportSelect', 'wsoc',
-                                'w-soccer', 'womens-soccer']:
-        if expected_url_clue in url:
-          schools[school]['Url'] = url
-          found = True
-          break
-      if 'schedule.aspx' in url:
-        schools[school]['Url'] = url.replace('schedule.aspx', 'roster.aspx')
-        found = True
-      if 'index.aspx' in url:
-        schools[school]['Url'] = url.replace('index.aspx', 'roster.aspx')
-        found = True
-      if found: break
+      if any([s in url for s in ['roster.aspx', 'SportSelect', 'wsoc',
+                                 'w-soccer', 'womens-soccer']]):
+        schools[school]['Url'] = _standardize_url(url)
+        break
+    if 'Url' not in schools[school]:
+      LOGGER.warning('No roster url found for {}'.format(school))
 
 
 def main():
-  logger = logging.getLogger(__name__)
-
   schools_filter = []
   if flags.schools:
     schools_filter = flags.schools.split(',')
-    logger.debug('Only saving these schools: {}'.format(str(schools_filter)))
+    LOGGER.debug('Only saving these schools: {}'.format(str(schools_filter)))
 
   # Get the list of schools from Wikipedia
   # https://en.wikipedia.org/wiki/List_of_NCAA_Division_I_women%27s_soccer_programs
@@ -138,4 +155,5 @@ if __name__ == '__main__':
                       datefmt='%m-%d %H:%M:%S',
                       filename=LOGFILE,
                       filemode='w')
+  LOGGER = logging.getLogger(__name__)
   main()
