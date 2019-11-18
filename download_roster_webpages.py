@@ -79,16 +79,14 @@ def get_webpage_content(urls):
 
 
 def save_files(soups, schools, output_dir):
-  """Save files locally.
-
-  This function saves 2 files for each school. One containing the HTML content
-  of the roster page, and one containing the URL used to request the page.
+  """Save the roster web page locally.
 
   Arguments:
     soups: A list of BeaufitfulSoup instances, one for each corresponding
         school in the list of schools.
-    schools: A list of strings of each school name.
-    corrected_urls: A list of strings of each corresponding school roster URL.
+    schools: A list of strings of each school name. The school name is used as
+        the file name for the saved web page.
+    output_dir: The local directory to save all web pages.
   """
   # Now save each webpage to a local file.
   for i, soup in enumerate(soups):
