@@ -83,7 +83,9 @@ class CollectRosterUrlsTest(unittest.TestCase):
                     'UCF':        {'Institution': 'UCF',
                                    'Nickname':    'Knights'},
                     'Virginia':   {'Institution': 'Virginia',
-                                   'Type':        'Public'}}
+                                   'Type':        'Public'},
+                    'Xavier':     {'Institution': 'Xavier',
+                                   'Conference':  'Big East'}}
   searchtest1_ex = {'Pepperdine': {'Institution': 'Pepperdine',
                                    'Conference':  'West Coast',
                                    'Url':         'https://pep.team/SportSelect.html'},
@@ -95,7 +97,10 @@ class CollectRosterUrlsTest(unittest.TestCase):
                                    'Url':         'https://goknights.edu/roster.aspx?path=wsoccer'},
                     'Virginia':   {'Institution': 'Virginia',
                                    'Type':        'Public',
-                                   'Url':         'https://v/wsoc/roster.aspx?path=wsoc'}}
+                                   'Url':         'https://v/wsoc/roster.aspx?path=wsoc'},
+                    'Xavier':     {'Institution': 'Xavier',
+                                   'Conference':  'Big East',
+                                   'Url':         'https://xav.edu/roster.aspx?path=wsoc'}}
   searchtest1_ret = [
     # Mock search result for Pepperdine
     ['https://pep.team/SportSelect.html'],
@@ -105,8 +110,10 @@ class CollectRosterUrlsTest(unittest.TestCase):
     # Mock search results for UCF
     ['https://goknights.edu/schedule.aspx?schedule=123&path=wsoccer'],
     # Mock search results for Virginia
-    ['https://v/wsoc/roster.aspx?roster=123&path=bball']]
-  searchtest1_esc = 4
+    ['https://v/wsoc/roster.aspx?roster=123&path=bball'],
+    # Mock search results for Xavier
+    ['https://xav.edu/roster.aspx']]
+  searchtest1_esc = 5
   searchtest1_elc = 0
   # Test 2 verify logging
   searchtest2_in = {'Nowhere school': {'Institution': 'nowhere'}}
@@ -164,6 +171,10 @@ class CollectRosterUrlsTest(unittest.TestCase):
      'https://school.edu/roster.aspx?path=wsoc'),
     ('http://google.com',
      'http://google.com'),
+    ('https://college.big/schedule.aspx?path=',
+     'https://college.big/roster.aspx?path=wsoc'),
+    ('https://institute.univ/sports/big-time/index.aspx?path=',
+     'https://institute.univ/sports/big-time/roster.aspx?path=wsoc'),
   ])
   def test_standardize_url(self, input, expected):
     actual = collect_roster_urls._standardize_url(input)

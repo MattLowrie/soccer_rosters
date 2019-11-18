@@ -45,6 +45,13 @@ def _clean_text(text):
     elif ord(c) > 128: clean_text += ' '
     else: clean_text += c
   clean_text = clean_text.strip()
+  # The wikitables module unfortunately includes all citation text if a table
+  # cell includes a link to one in the wiki page. This is a cheat to fix some
+  # institution name table cells at the time of running this script (Nov. 2019)
+  if clean_text.startswith('California Baptist'):
+    clean_text = 'California Baptist'
+  if clean_text.startswith('Merrimack'):
+    clean_text = 'Merrimack'
   return clean_text
 
 
@@ -89,10 +96,17 @@ def _standardize_url(url):
       if val:
         qs = 'path={}'.format(val[0])
       else:
-        # If a different sport was collected in the url, change it to wsoc
+        # If a different sport was collected in the url, set it to 'wsoc'
         qs = 'path=wsoc'
-    path = parts.path.replace('index', 'roster')
-    path = parts.path.replace('schedule', 'roster')
+    else:
+      # If no path was in the url, set it to 'wsoc'
+      qs = 'path=wsoc'
+    if 'index' in parts.path:
+      path = parts.path.replace('index', 'roster')
+    elif 'schedule' in parts.path:
+      path = parts.path.replace('schedule', 'roster')
+    else:
+      path = parts.path
     url = urlunparse((parts.scheme, parts.netloc, path, None, qs, None))
   # Remove any year specification, e.g., 2019-2020 at the end of a url. The
   # default /roster path will navigate to the current year.
