@@ -232,7 +232,15 @@ class SidearmSportsSidearmClassNameProcessor(ProcessorBase):
     position_node = player.select('span'
                                   '.sidearm-roster-player-position-long-short'
                                   '.hide-on-medium')
-    return self.remove_extra_spaces(position_node[0].get_text())
+    if position_node:
+      return self.remove_extra_spaces(position_node[0].get_text())
+    else:
+      # Alternative markup for player postion
+      position_node = player.select('div'
+                                    '.sidearm-roster-player-position')
+      if position_node and position_node[0].span:
+        return self.remove_extra_spaces(position_node[0].span.get_text())
+    return ''
 
   def get_player_height(self, player):
     class_selector = '[class="sidearm-roster-player-height"]'
@@ -301,7 +309,13 @@ class SidearmSportsSidearmClassNameProcessor(ProcessorBase):
     class_selector = '[class="sidearm-roster-player-custom1"]'
     nodes = player.select(class_selector)
     if nodes:
-      return self.remove_extra_spaces(nodes[0].get_text())
+      maybe_club = self.remove_extra_spaces(nodes[0].get_text())
+      # Sometimes the custom field just has some 2- or 3-letter codes in it,
+      # so those can be skipped
+      if len(maybe_club) < 4:
+        return ''
+      else:
+        return maybe_club
     else:
       return ''  # After any logging scenario return empty string.
 
@@ -315,6 +329,7 @@ class SidearmSportsSidearmClassNameProcessor(ProcessorBase):
       self.height = self.get_player_height(player)
       self.hometown, self.home_state = \
           self.get_player_hometown_and_home_state(player)
+      self.high_school = self.get_player_high_school(player)
       self.year = self.get_player_year(player)
       self.club = self.get_player_club(player)
       self.add_player_to_team()
@@ -443,7 +458,7 @@ class HtmlTableProcessor(ProcessorBase):
     tds = player.select('td')
     for td in tds:
       data_text = td.get_text().strip()
-      label_text = None
+      label_text = ''
       spans = td.select('span')
       for span in spans:
         if span.attrs and 'label' in list(span.attrs.values())[0]:
